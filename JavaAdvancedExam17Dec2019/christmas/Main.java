@@ -10,7 +10,7 @@ public class Main {
 
         bag.add(present);
 
-        bag.remove("Toy"); // false
+        bag.remove("Toy");
         Present secondPresent = new Present("Train", 2, "boy");
 
         bag.add(secondPresent);
