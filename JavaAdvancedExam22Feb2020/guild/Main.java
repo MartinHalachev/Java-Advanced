@@ -7,8 +7,8 @@ public class Main {
         System.out.println(player);
 
         guild.addPlayer(player);
-        System.out.println(guild.count()); //1
-        System.out.println(guild.removePlayer("Gosho")); //false
+        System.out.println(guild.count());
+        System.out.println(guild.removePlayer("Gosho"));
 
         Player firstPlayer = new Player("Pep", "Warrior");
         Player secondPlayer = new Player("Lizzy", "Priest");
@@ -24,7 +24,7 @@ public class Main {
 
         guild.promotePlayer("Lizzy");
 
-        System.out.println(guild.removePlayer("Pep")); //true
+        System.out.println(guild.removePlayer("Pep"));
 
         Player[] kickedPlayers = guild.kickPlayersByClass("Rogue");
         for (Player kickedPlayer : kickedPlayers) {
